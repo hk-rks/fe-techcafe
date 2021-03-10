@@ -1,6 +1,6 @@
 <template>
   <v-container>
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <HelloWorld :msg="msg" />
   </v-container>
 </template>
 
@@ -11,6 +11,9 @@ export default {
   name: "Home",
   components: {
     HelloWorld
-  }
+  },
+  data: () => ({
+    msg: "Welcome to Your Vue.js App"
+  })
 };
 </script>
